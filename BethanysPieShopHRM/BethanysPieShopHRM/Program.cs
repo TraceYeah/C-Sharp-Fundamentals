@@ -205,3 +205,5 @@ Console.WriteLine("Closing application");
 //}
 //Console.WriteLine("Loop end");
 
+//testing git commits
+
