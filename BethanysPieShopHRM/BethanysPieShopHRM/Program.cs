@@ -99,67 +99,241 @@ use the compound operator to increase its value by 3.
      bool validAge > 18;
 
 /*Create a variable named validAge of type bool. 
- In the same statement as its creation, set it to the result of checking if age is less than or equal to 65.
+  In the same statement as its creation, set it to the result of checking if age is less than or equal to 65.
 
-     bool validAge = (age <= 65);
-     
+     bool validAge = (age <= 65);*/
+
+/*Using an if statement, write to the console "You are eligible", then "Congratulations" 
+  if the age is greater than 18. Use two WriteLine() calls.
+
+  int age = 33;
+
+  if (age > 18)
+  { 
+    Console.WriteLine("You are eligible");
+    Console.WriteLine("Congratulations");
+  }
+
+*/
+
+/*Using an if statement, write to the console "You are eligible", then "Congratulations" if the age is greater than 18. Use two WriteLine() calls.
+  Use an else statement that outputs "You aren't eligible" then "Sorry"in all other cases. Also use two WriteLine() calls.
+
+    int age = 45;
+
+    if (age > 18)
+    {
+      Console.WriteLine("You are eligible");
+      Console.WriteLine("Congratulations");
+    }
+    else
+    {
+      Console.WriteLine("You aren"t eligible");
+      Console.WriteLine("Sorry");
+    }
+*/
+
+/*Using an if statement, write to the console "You are eligible" and "Congratulations" if the age is equal to 18.
+  Use two WriteLine() calls.
+
+  int age = 45;
+
+  if (age == 18)
+  {
+    Console.WriteLine("You are eligible");
+    Console.WriteLine("Congratulations");
+  }
+*/
+
+/*You are going to compare two values entered by the user.
+ Ask the user for a first value by displaying to the Console "Enter a first number:".
+ Make sure to use Console.WriteLine() to display this. Capture the user input in a variable named stringValue1 of type string,
+ and use Console.ReadLine() for this.
+
+ Then, display "Enter a second number:", and store the second value in a variable called stringValue2.
+
+ Now, create an int variable intValue1, and set it to the result of parsing (using int.Parse()) the value of stringValue1. 
+ Do the same for an intValue2 variable.
+
+ Finally, create an if/else statement. In all comparisons, have intValue1 first, then intValue2:
+
+ In the if part, check if intValue1 and intValue2 are equal. If so, display "The values are equal!" to the console.
+ In the else if, check if intValue1 is less than intValue2, and if true, display "The first value is smaller!".
+ Finally, in the else, display "The second value is smaller!".
+
     
+  Console.WriteLine("Enter a first number");
+  string stringValue1 = Console.ReadLine();
+
+  Console.WriteLine("Enter a second number");
+  string stringValue2 = Console.ReadLine();
+
+  int intValue1 = int.Parse(stringValue1);
+  int intValue2 = int.Parse(stringValue2);
+  
+  if (intValue1 == intValue2)
+  {
+    Console.WriteLine("The values are equal!");
+  }
+  else if (intValue1 < intValue2)
+  {
+    Console.WriteLine("The first value is smaller!");
+  }
+  else
+  {
+    Console.WriteLine("The second value is smaller");
+  }
+*/
+
+/*You need to write to the console (using the Console.WriteLine()method) the following output:
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    Create a while loop that generates this output. Once the while loop completes, the value of i must be 11. 
+    Note: use Console.WriteLine(i) to display the value of i. Increase the value in a separate statement.
+
+  int i = 1;
+
+  while (i <= 10)
+  {
+    Console.WriteLine(i);
+    i++;
+  }
+  Console.WriteLine(i);
+*/
+
+/*You are going to use a loop to sum up numbers. For example, if the user enters 5, you will return 5 + 4 + 3 + 2 + 1, so 15.
+ 
+  First, right after sum is assigned 0, capture the user input from Console.ReadLine() into a string variable named stringValue.
+  Next, create a variable startValue, of type int, and in the same statement, set it to the result of parsing stringValue. 
+  Use int.Parse() for this.
+
+  Next, write a for loop to calculate the sum as explained above.
+
+  The iterator must be named i and must be of type int, and its initial value set to startValue.
+  Then within the loop's condition, check if i is larger than 0. In this comparison, have i first.
+  Inside the for loop, add i to sum using the compound operator +=.
+
+  Console.WriteLine("Enter a value: ");
+  int sum = 0;
+
+  string stringValue = Console.ReadLine();
+  int startValue = int.Parse(stringValue);
+
+  int i = startValue;
+  
+  if (i > 0)
+  { 
+    (i + sum);
+  }
+
+/*You need to write the following output to the console:
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+To do so, create a for loop. The counter must be named i and it must be initialized to 0. 
+Inside the body of the for loop, use one Console.WriteLine() statement to write the value of i to the console.
+
+  for (int i = 0; i < 10; i++)
+  {
+    Console.WriteLine(i);
+  }*/
+
+/*
+      
+
+
+  
+    
+
+  
+ 
 
 /* 
 *-* What is C# and what are some of its features?
 
-      C# is an object-oriented programming language that was developed by Microsoft in the early 2000s. 
-      It is designed to be simple, modern, and safe, with a strong focus on type safety, memory management, 
-      and garbage collection.
+    C# is an object-oriented programming language that was developed by Microsoft in the early 2000s. 
+    It is designed to be simple, modern, and safe, with a strong focus on type safety, memory management, 
+    and garbage collection.
 
-      C# is a strongly typed language, which means that variables must be declared with a specific data type before they can be used.
-      It supports a variety of data types, including integer, floating-point, boolean, and string, among others. 
-      C# also includes features like classes, objects, inheritance, and polymorphism, which are core principles of 
-      object-oriented programming.
+    C# is a strongly typed language, which means that variables must be declared with a specific data type before they can be used.
+    It supports a variety of data types, including integer, floating-point, boolean, and string, among others. 
+    C# also includes features like classes, objects, inheritance, and polymorphism, which are core principles of 
+    object-oriented programming.
 
-      Overall, C# is a powerful and versatile programming language that is widely used in a variety of applications, 
-      including desktop and mobile development, game development, web development, and more. \
-      It has a large and active community of developers, 
-      and there are many resources available online to help you learn and improve your skills in C#.    
+    Overall, C# is a powerful and versatile programming language that is widely used in a variety of applications, 
+    including desktop and mobile development, game development, web development, and more. \
+    It has a large and active community of developers, 
+    and there are many resources available online to help you learn and improve your skills in C#.    
 
 *-* What is the difference between a class and an object in C#?
 
-      a class is like a cookie cutter that defines the shape of a cookie, 
-      while an object is like the cookie itself that has its own distinct properties, such as flavor and texture.
+    a class is like a cookie cutter that defines the shape of a cookie, 
+    while an object is like the cookie itself that has its own distinct properties, such as flavor and texture.
 
 *-* What are the access modifiers in C# and what do they mean?
 
-      Access modifiers in C# are keywords that determine the visibility and accessibility of classes, methods, and other members 
-      of a program. There are five access modifiers in C#:
+    Access modifiers in C# are keywords that determine the visibility and accessibility of classes, methods, and other members 
+    of a program. There are five access modifiers in C#:
 
 *1* Public: A public member can be accessed from anywhere within the program, including other classes and assemblies.
 
 *2* Private: A private member can only be accessed within the same class where it is declared. 
-     It is not visible or accessible outside of that class.
+   It is not visible or accessible outside of that class.
 
 *3* Protected: A protected member is accessible within the same class and any derived classes (classes that inherit from the base class).
-     It is not visible or accessible outside of that class hierarchy.
+   It is not visible or accessible outside of that class hierarchy.
 
 *4* Internal: An internal member can be accessed within the same assembly (a collection of compiled code files) 
-     but is not visible or accessible outside of that assembly.
+   but is not visible or accessible outside of that assembly.
 
 *5* Protected internal: A protected internal member is accessible within the same assembly and any derived classes 
-    (classes that inherit from the base class), even if they are in a different assembly.
+  (classes that inherit from the base class), even if they are in a different assembly.
 
-    These access modifiers help control the visibility and accessibility of a program's members,
-    which can help improve the program's security, maintainability, and flexibility. By setting appropriate access modifiers, 
-    you can ensure that your program's members are only accessible by the appropriate code, and that they are not accidentally 
-    modified or accessed in unintended ways.
+  These access modifiers help control the visibility and accessibility of a program's members,
+  which can help improve the program's security, maintainability, and flexibility. By setting appropriate access modifiers, 
+  you can ensure that your program's members are only accessible by the appropriate code, and that they are not accidentally 
+  modified or accessed in unintended ways.
 
-
+*6* What is a method in C#?
+    
+    Methods are code blocks which contain a number of code statements. They have a name and by calling that name we can invoke
+    that method and the code that lives within that method. Methods are always declared inside of a class or a struct.
+   
+    *Code Block
+    *Receives parameters and (optionally) returns values
+    *Readable code and code reuse
+    *Declared inside of a class or a struct
+     
+    <acess modifier> <return type> Method_Name (Parameters)
+    { 
+      //method statement
+    }
+    
 *-* What is polymorphism and how is it implemented in C#?
 *-* What is inheritance in C# and how is it used?  *-* What is an interface in C# and how is it different from a class?
 *-* What is the difference between an abstract class and an interface?
 *-* What is the purpose of the "using" statement in C#?
 *-* What is a delegate in C# and how is it used?
 *-* What is the difference between a value type and a reference type in C#?
-     
-     
+
+
 
 
 
@@ -455,7 +629,71 @@ bool c = true;
 //    Console.WriteLine(i);
 //}
 
+//mod 5 methods
+
+//public int AddTwoNumbers(int a, int b)
+//{
+//    return a + b;
+//}
+
+//public int AddTwoNumbers(int a, int b)
+//{
+//    if (a > b)
+//    {
+//        return a + b;
+//    }
+//    return 0;
+//}
+
+//public void DisplaySum(int a, int b) //void return type indicates that the caller shouldn't expect a return from the method
+//{
+//    int sum = a _ + b;
+//    Console.WriteLine("The sum is " + sum); 
+//}
+
+//DispaySum(3, 5); // Invoking a method : We can pass arguments: values for the parameter(s)
+
+//Flow of Execution
+
+//Console.WriteLine("Before DisplaySum");
+
+//DisplaySum(3, 5);
+
+//Console.WriteLine("After DisplaySum");
+
+
+//public void DisplaySum(int a, int b);
+//{
+//    int sum = a + b;
+//    Console.WriteLine("The sum is " + sum);
+//}
+
+
+//Console.WriteLine("Enter a value: ");
+//int max = int.Parse(Console.ReadLine());
+
+//for (int i = 0; i < max; i++)
+//{
+//    if (i == 5)
+//    {
+//        Console.WriteLine("Bingo! " + i + " was found!");
+//        break;
+//    }
+//    Console.WriteLine(i);
+//}
+
+
+int amount = 1234;
+int months = 12;
+
+CalculateYearlyWage(amount, months);
+
+Console.ReadLine();
 
 
 
-
+static void CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked);
+{
+    int monthlyWage = 0;
+    Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
+}
