@@ -7,19 +7,24 @@
         Console.WriteLine("Hello " + name);*/
 
 /*Create a variable of type string named input which will accept input from the console. Use the ReadLine() method.Do this all in one single statement.
-    string input = Console.ReadLine();*/
+
+        string input = Console.ReadLine();*/
 
 /*Create a variable of type bool named isActive (case-sensitive). Assign it the value false. Do this in one single statement
-       bool isActive = false;*/
+
+        bool isActive = false;*/
 
 /*Create a variable of type decimal named price. In the same statement as the creation of the variable, set it to 100.0.
-       decimal price = 100.0M;*/
+
+        decimal price = 100.0M;*/
 
 /*Create a variable of type string named greeting. In the same statement, set its value to "Hello". Make sure to use the exact same value for the string value.
-       string greeting = "Hello";*/
+     
+        string greeting = "Hello";*/
 
 /*Create a constant double variable named profitMargin. Set its value to 0.17. Use the correct literal to indicate we're working with double when declaring.
-       const double profitMargin = 0.17;*/
+      
+        const double profitMargin = 0.17;*/
 
 /*You are going to sum up two integer variables, and assign that sum to a third variable.
   First, create a variable a of type int and set it to 3 (use a single statement to do so). Then, create a second variable b, also of type int, 
@@ -32,15 +37,130 @@
 
 /*Create a variable named a of type int, and initialize it in the same statement to 1.
 use the compound operator to increase its value by 3.
+
       int a = 1;
       a += 3;*/
 
 /*Create a variable named aChar of type char, and in the same statement, initialize its value to 'b'.
-      char aChar = 'b';*/
+      
+     char aChar = 'b';*/
 
 /*Create a variable named aChar of type char, and set it, in the same statement, to 'a'.
   Next, create a variable named isWhiteSpace of type bool. Set it, in the same statement, to the result of checking if aChar is a white space character.
       
+     char aChar = 'a';
+     bool isWhiteSpace = char.IsWhiteSpace(aChar);
+     Console.WriteLine(isWhiteSpace); 
+
+/*First, create a variable of type DateTime named startDate and set it, in the same statement, to a new date: March 05, 2022. 
+  Use the 3 argument constructor to do so.
+  Second, create a second DateTime variable named endDate. Set its value, again in the same statement, to today's date. 
+  The time component should be set to 00:00:00.
+     
+     DateTime startDate = new DateTime(2022, 03, 05);
+     DateTime endDate = new DateTime.Today;*/
+
+/*First, create a variable of type long named myLargeValue. In the same statement, set its value to 123456789.
+  Next, create a variable intValue of type int.
+  In the same statement as its creation, set its value equal to myLargeValue and apply, if needed, the correct
+  cast for the code to be correct.
+
+     long myLargeValue = 123456789;
+     int intValue = (int)myLargeValue;*/
+
+/*Create an implicitly typed variable named a and set it to 10 (so an integer value).
+     var a = 10;*/
+
+/*You are going to calculate the sum of two values entered by the user. 
+ Ask the user for a first value by displaying to the Console "Enter a first value:". 
+ Make sure to use Console.WriteLine() to display this text. 
+ Capture the user input in a variable named stringValue1 of type string, and use Console.ReadLine() for this. 
+ Then, display "Enter a second value:", and store the second value in a variable called stringValue2.
+
+ Now parse the entered values. 
+ Create a variable intValue1 of type int, and set it to the result of parsing, using int.Parse(), stringValue1.
+ Repeat the process by parsing stringValue2 into a new variable intValue2.
+
+ Finally, create a variable sum, using implicit typing, and set it to the sum of intValue1 and intValue2, in that left-to-right order.
+
+     Console.WriteLine("Enter a first value: ");
+     string stringValue1 = Console.ReadLine();
+     Console.WriteLine("Enter a second value: ");
+     string stringValue2 = Console.ReadLine();
+
+     int intValue1 = int.Parse(stringValue1);
+     int intValue2 = int.Parse(stringValue2);
+
+     var sum = intValue1 + intValue2;*/
+
+/*Create a variable named validAge of type bool. 
+  In the same statement as its creation, set it to the result of checking if age is greater than 18.
+     
+     bool validAge > 18;
+
+/*Create a variable named validAge of type bool. 
+ In the same statement as its creation, set it to the result of checking if age is less than or equal to 65.
+
+     bool validAge = (age <= 65);
+     
+    
+
+/* 
+*-* What is C# and what are some of its features?
+
+      C# is an object-oriented programming language that was developed by Microsoft in the early 2000s. 
+      It is designed to be simple, modern, and safe, with a strong focus on type safety, memory management, 
+      and garbage collection.
+
+      C# is a strongly typed language, which means that variables must be declared with a specific data type before they can be used.
+      It supports a variety of data types, including integer, floating-point, boolean, and string, among others. 
+      C# also includes features like classes, objects, inheritance, and polymorphism, which are core principles of 
+      object-oriented programming.
+
+      Overall, C# is a powerful and versatile programming language that is widely used in a variety of applications, 
+      including desktop and mobile development, game development, web development, and more. \
+      It has a large and active community of developers, 
+      and there are many resources available online to help you learn and improve your skills in C#.    
+
+*-* What is the difference between a class and an object in C#?
+
+      a class is like a cookie cutter that defines the shape of a cookie, 
+      while an object is like the cookie itself that has its own distinct properties, such as flavor and texture.
+
+*-* What are the access modifiers in C# and what do they mean?
+
+      Access modifiers in C# are keywords that determine the visibility and accessibility of classes, methods, and other members 
+      of a program. There are five access modifiers in C#:
+
+*1* Public: A public member can be accessed from anywhere within the program, including other classes and assemblies.
+
+*2* Private: A private member can only be accessed within the same class where it is declared. 
+     It is not visible or accessible outside of that class.
+
+*3* Protected: A protected member is accessible within the same class and any derived classes (classes that inherit from the base class).
+     It is not visible or accessible outside of that class hierarchy.
+
+*4* Internal: An internal member can be accessed within the same assembly (a collection of compiled code files) 
+     but is not visible or accessible outside of that assembly.
+
+*5* Protected internal: A protected internal member is accessible within the same assembly and any derived classes 
+    (classes that inherit from the base class), even if they are in a different assembly.
+
+    These access modifiers help control the visibility and accessibility of a program's members,
+    which can help improve the program's security, maintainability, and flexibility. By setting appropriate access modifiers, 
+    you can ensure that your program's members are only accessible by the appropriate code, and that they are not accidentally 
+    modified or accessed in unintended ways.
+
+
+*-* What is polymorphism and how is it implemented in C#?
+*-* What is inheritance in C# and how is it used?  *-* What is an interface in C# and how is it different from a class?
+*-* What is the difference between an abstract class and an interface?
+*-* What is the purpose of the "using" statement in C#?
+*-* What is a delegate in C# and how is it used?
+*-* What is the difference between a value type and a reference type in C#?
+     
+     
+
 
 
 
@@ -335,9 +455,6 @@ bool c = true;
 //    Console.WriteLine(i);
 //}
 
-char aChar = ' ';
-bool isWhiteSpace = char.IsWhiteSpace(aChar);
-Console.WriteLine(isWhiteSpace ); 
 
 
 
